@@ -273,6 +273,16 @@ body{
     bottom: 0px ;
     left: 0px;
 }
+.play-instantly-images .img3 img{
+    width: 40%;
+    position: absolute;
+    bottom: 0px ;
+    right: 0px;
+}
+.for-left{
+    text-align: start;
+    padding: 10px 10px 10px 100px;
+}
 .careers-section{
     margin: 20px 0px;
     background-color: #FF42A5;
@@ -507,10 +517,24 @@ footer{
         padding: 20px;
         margin-left: 30px;
     }
+    .for-online{
+        width: 100%;
+        padding: 20px;
+        margin-right: 40px;
+        position: relative;
+    }
     .play-instantly-images .img2 img{
         width: 40%;
         bottom: 0px ;
         left: -10px;
+    }
+    .play-instantly-images .img3 img{
+        width: 40%;
+        bottom: 0px;
+        right: -10px;
+    }
+    .reverse{
+        flex-direction: column-reverse;
     }
     .careers-container{
         flex-direction: column;
