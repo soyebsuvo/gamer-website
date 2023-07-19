@@ -34,6 +34,7 @@ body{
     border: none;
     margin-right: 10px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .btn-secondary{
     padding: 10px 30px;
@@ -42,6 +43,7 @@ body{
     color: white;
     border: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* navbar styles */
@@ -171,6 +173,78 @@ body{
 .gamer-content .btn-primary{
     margin: 10px 0px;
 }
+ /* funny videoes section design  */
+ .funny-videoes-section{
+    margin: 40px 0px;
+    text-align: center;
+ }
+ .funny-videoes-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 30px 100px;
+ }
+ .funny-videoes-container .funny-card img{
+    width: 100%;
+ }
+ .funny-videoes-container .funny-card{
+    text-align: left;
+    padding: 10px;
+    position: relative;
+ }
+ .watch{
+    color: #F948B2;
+    font-weight: 500;
+    opacity: 1;
+ }
+ .fa-circle-play{
+    color: white;
+    font-size: 30px;
+    opacity: 1;
+ }
+ .card-img{
+    position: relative;
+ }
+ .funny-videoes-container .res{
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 99%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-img:hover .res{
+    opacity: .6;
+    box-shadow: 0px 0px 10px black;
+}
+.over-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+.card-img:hover .over-content{
+    opacity: 1;
+}
+
+
+
+
+
 
 
 
@@ -217,6 +291,10 @@ body{
         width: 100%;
         padding: 0px;
     }
+    .funny-videoes-container{
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
     
 }
 
@@ -232,5 +310,9 @@ body{
     }
     .gamer-image{
         padding: 0px;
+    }
+    .funny-videoes-container{
+        grid-template-columns: repeat(2,1fr);
+        padding: 40px 80px;
     }
 }
