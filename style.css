@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+/* shared styles */
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.section-title{
+    font-size: 35px;
+}
+.linear-designed{
+    background-image: linear-gradient(to bottom,#F948B2 , #8758F1);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.section-description{
+    color:#534C64;
+    font-size: 14px;
+    margin: 10px 0px;
+    line-height: 20px;
+}
+.btn-primary{
+    padding: 10px 30px ;
+    border-radius: 30px;
+    background-color: #FF42A5;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+.btn-secondary{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #4EC5F7;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* navbar styles */
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 90px;
+    background-color: #FFF;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-menus{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.linked-lists{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    align-items: center;
+    background-color: rgba(11, 2, 35, 0.10);
+    padding: 12px 25px;
+    border-radius: 8px;
+}
+.linked-lists li a{
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+.nav-menus li{
+    list-style: none;
+    font-size: 14px;
+}
+.nav-menus li a{
+    text-decoration: none;
+    color: #3C354F;
+    text-align: center;
+    font-weight: 500;
+
+}
+.logo-img{
+    display: flex;
+    justify-content: flex-end;
+}
+.logo-img img{
+    width: 60%;
+}
+.logo-title{
+    color:#0B0223;
+    font-weight: 700;
+}
+.text-colored{
+    color: #F948B2;
+}
+.hide{
+    display: none;
+}
+
+/* banner section design  */
+.banner-section{
+    background-image: url("images/Group\ 14.png");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+.banner-content{
+    width: 50%;
+}
+.banner-image{
+    width: 50%;
+    padding: 30px;
+}
+.banner-image img{
+    width: 100%;
+}
+.banner-content .linear-designed{
+    font-size: 50px;
+}
+.button-div{
+    margin-top: 20px;
+}
+
+/* gamer section design  */
+
+.gamer-section{
+    margin: 0px 0px;
+    background-color: rgba(255, 66, 165, 0.03);
+}
+.gamer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 100px;
+}
+.gamer-image{
+    width: 50%;
+    padding: 10px;
+}
+.gamer-image img{
+    width: 100%;
+}
+.gamer-content{
+    width: 50%;
+    padding: 40px;
+    text-align: right;
+}
+.unleash{
+    color: #534C64;
+    font-weight: 700;
+}
+.gamer-content .btn-primary{
+    margin: 10px 0px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .nav-container{
+        flex-direction: column;
+        padding: 14px;
+    }
+    .logo-container{
+        gap: 4px;
+        justify-content: center;
+    }
+    .nav-menus{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    .banner-content{
+        width: 100%;
+        padding: 10px;
+    }
+    .banner-image{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .gamer-container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .gamer-content{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .gamer-image{
+        width: 100%;
+        padding: 0px;
+    }
+    
+}
+
+@media screen and (min-width:576px) and (max-width:960px){
+    .nav-container{
+        padding: 20px 40px;
+    }
+    .banner-container{
+        padding: 40px;
+    }
+    .gamer-container{
+        padding: 20px;
+    }
+    .gamer-image{
+        padding: 0px;
+    }
+}
