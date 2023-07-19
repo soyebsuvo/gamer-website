@@ -241,6 +241,39 @@ body{
     opacity: 1;
 }
 
+/* play instantly section styles  */
+
+.play-instantly-section{
+    margin: 30px 0px;
+}
+.play-instantly-container{
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.play-instantly-content{
+    width: 50%;
+    text-align: right;
+    padding: 10px 50px;
+}
+.play-instantly-images{
+    width: 50%;
+    position: relative;
+    padding: 60px;
+
+}
+.play-instantly-images .img1 img{
+    width: 100%;
+
+}
+.play-instantly-images .img2 img{
+    width: 40%;
+    position: absolute;
+    bottom: 0px ;
+    left: 0px;
+}
+
 
 
 
@@ -295,6 +328,25 @@ body{
         grid-template-columns: 1fr;
         padding: 30px;
     }
+    .play-instantly-container{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .play-instantly-content{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .play-instantly-images{
+        width: 100%;
+        padding: 20px;
+        margin-left: 30px;
+    }
+    .play-instantly-images .img2 img{
+        width: 40%;
+        bottom: 0px ;
+        left: -10px;
+    }
     
 }
 
@@ -314,5 +366,23 @@ body{
     .funny-videoes-container{
         grid-template-columns: repeat(2,1fr);
         padding: 40px 80px;
+    }
+    .play-instantly-container{
+        padding: 10px;
+    }
+    .play-instantly-content{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .play-instantly-images{
+        width: 100%;
+        padding: 20px;
+        margin-left: 30px;
+    }
+    .play-instantly-images .img2 img{
+        width: 40%;
+        bottom: 0px ;
+        left: -10px;
     }
 }
